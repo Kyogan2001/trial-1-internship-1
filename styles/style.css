@@ -27,7 +27,7 @@ body{
 .container{
     width:80%;
     margin: auto;
-    padding: auto;
+    overflow: hidden;
 }
 
 a{
@@ -41,18 +41,22 @@ li{
     color: #fff;
 }
  .btn{
-     height: 3rem;
-     width: 2rem;
-     padding: 20rem;
+     height: 1.5rem;
+     border: 1px solid #32a0c2;
+     border-radius: 3px;
+     cursor:pointer;
+     text-align: center;
+     width: 5rem;
+     padding: 5px 10px;
 
  }
 
 nav{
     background-color: rgb(41, 41, 41);
     color: rgb(48, 48, 48);
-    padding-top: 2rem;
+    padding: 2rem;
     min-height: 4.5rem;
-    border-bottom: 3px solid #32a0c2;
+    border: 3px solid #32a0c2;
 }
 
 
@@ -64,14 +68,19 @@ nav li{
     float: left;
     display: inline;
     /* paddind top left bottom right ---- clockwise*/
-    padding:0 1.5rem 0 1.5rem;
+    padding:0 1.5rem;
     font-weight: 600;
 }
 
 nav .branding{
     float: left;
-    font-size: 2rem;
-    font-weight: 1000;
+}
+
+nav .branding a{
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-top: 0.8rem;
 }
 
 nav .branding a i{
@@ -99,49 +108,74 @@ nav ul li a:hover{
 /* header styling */
 
 header{
-    min-height: 20rem;
-    background: url(../images/Raf747df4fe1655615d99af2e4dfead5c.jpg) no-repeat center;
+    margin:0;
+    min-height: 38rem;
+    background: url(../images/web-development-banner.jpg) no-repeat center;
     text-align: center;
-    color: black;
+    color: rgb(255, 255, 255);
+    background-size: cover;
 }
 
 header h1{
-    padding-top:5rem;
-    line-height: 1;
-    height: 5rem;
+    margin-top: 6rem;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 900;
 }
 
 header p{
-    padding-top: 5rem;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    font-weight: 600;
+    text-align: justify;
 }
  
 /* header over */
 
 /* news letter */
 .newsletter{
-    padding: 3rem;
+    padding: 1rem;
     color: #fff;
     background:rgb(48, 48, 48);
 }
 
 .newsletter form{
     float:right;
-    margin-top: 0.1rem;
+    margin-top: 0.3rem;
 }
 
 .newsletter h2{
     float: left;
-    height: 2rem;
 }
 
 .newsletter input[type="email"]:focus{
     outline: none;
 }
 
+.newsletter input[type='email']{
+    padding: 1rem;
+    height: 2.5rem;
+    width: 16rem;
+    border-radius: 3px;
+    border:0;
+}
+
 .newsletter .btn{
     background-color: #32a0c2;
-    border-color: white;
+    border-color: #32a0c2;
+    color: #f4f4f4;
+    font-weight: 600;
+    height: 2.5rem;
+    width:6rem;
     
+}
+
+/* newsletter over */
+/* card styling start */
+
+.cards{
+    padding: 2rem 0;
+    margin:2rem 0;
 }
 
 .cards .container{
@@ -159,8 +193,24 @@ header p{
 .cards .container .card h3{
     font-size: 1.2rem;
     padding-bottom: 1rem;
+    font-weight: 900;
 }
 
 .cards .container .card p{
     padding-bottom: 1rem;
+    font-weight: 300;
+}
+
+.cards .container .card i{
+    color: #32a0c2;
+}
+
+footer{
+    padding:1rem;
+    text-align: center;
+    font-weight: 600;
+    color: #fff;
+    background-color: #32a0c2;
+    margin-top: 1rem;
+
 }
